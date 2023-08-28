@@ -1,0 +1,141 @@
+#portfolio {
+    background-color: var(--background-grey);
+    padding: 160px 0 72px;
+}
+
+#portfolio .portofolio__jumbotron {
+    width: 1040px;
+    padding: 0;
+}
+
+#portfolio .portofolio__jumbotron h6 {
+    color: var(--giard-green);
+}
+
+#portfolio .container__box {
+    width: 709px;
+}
+
+#portfolio .portofolio__jumbotron h1 {
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+#portfolio .portofolio__jumbotron p {
+    margin: 32px 0 0;
+    line-height: 1.5;
+}
+
+/* Cards */
+#portfolio .card {
+    width: 378px;
+    height: 370px;
+    border-radius: 28px;
+    margin: 0 auto;
+    transition: all 0.5s ease-out
+}
+
+#portfolio .card:hover {
+    box-shadow: 0 35px 15px 15px #D6B79E;
+    transform: translateY(-15%);
+    transition: all 0.5s ease-out
+}
+
+#portfolio .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body__main__text {
+    margin-top: 32px;
+}
+
+.card-body__main__text h5 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.05em;
+    line-height: 1.15;
+}
+
+.card-body__main__text p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+#portfolio .btn {
+    font-family: inter, sans-serif;
+    color: var(--giard-green);
+    width: 171px;
+    line-height: 16px;
+    padding: 0 0 4px;
+    display: inline;
+    border-radius: 0;
+    border-bottom: 1px solid var(--giard-green);
+}
+
+#portfolio .btn img {
+    margin-left: 10px;
+}
+
+#portfolio .card2 .btn {
+    width: 207px;
+}
+
+@media (min-width: 1440px) {
+    #portfolio .row {
+        max-width: 1500px;
+        margin: 48px auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    #portfolio .portofolio__jumbotron {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    #portfolio .portofolio__jumbotron .container__box {
+        width: 100%;
+    }
+
+    #portfolio .portofolio__jumbotron p {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {
+    #portfolio .portofolio__jumbotron {
+        padding: 0 5px;
+        width: 90%;
+    }
+
+    #portfolio .container__box h1 {
+        font-size: 32px;
+    }
+
+    #portfolio .card {
+        max-width: 378px;
+        width: 94%;
+    }
+
+    
+    #portfolio .btn {
+        font-size: 14px;
+        width: 149px;
+    }
+    
+    #portfolio .card2 .btn {
+        width: 185px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card-body {
+        padding: 4px;
+    }
+
+    .card-body__main__text {
+        margin-top: 24px;
+    }
+}

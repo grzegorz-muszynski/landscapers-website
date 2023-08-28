@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="CSS/about.css" rel="stylesheet">
+    <link href="CSS/contact.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/gallery.css" rel="stylesheet">
+    <link href="CSS/intro.css" rel="stylesheet">
+    <link href="CSS/navigation.css" rel="stylesheet">
+    <link href="CSS/portfolio.css" rel="stylesheet">
+    <link href="CSS/variables.css" rel="stylesheet">
+
+    <!-- Macy.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2.5.1/dist/macy.min.js"></script>
+
+    <!-- Montserrat regular -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <title>Giard Design</title>
+</head>
+
+<body>
+    <!-- Sekcja "Nawigacja" -->
+    <section class="navigation">
+        <!-- <nav class="navbar navbar-expand-sm bg-body-tertiary container-sm"> -->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary container-md">
+            <!-- Brand name -->
+            <p class="navigation__brand my-4 px-1"><span class="fw-bold">giard</span>design</p>
+
+            <!-- toggle button for mobile nav -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#main-nav"
+                aria-controls="main-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="container-lg"> 
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown pe-sm-4 pe-md-5">
+                            <a 
+                                id="navigation__dropdown-btn"
+                                class="nav-link" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false"
+                            >Oferta<img src="./assets/navbar/arrow-down.svg" alt="Nowoczesne ogrody" /></a>
+
+                            <ul class="navigation__dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item ul-items" href="#portfolio">Projekty</a></li>
+                                <li><a class="dropdown-item ul-items" href="#portfolio">Wizualizacje</a></li>
+                                <li><a class="dropdown-item" href="#portfolio">Realizacje</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item pe-sm-4 pe-md-5">
+                            <a class="nav-link" href="#intro">O firmie</a>
+                        </li>
+                        <li class="nav-item pe-sm-4 pe-md-5">
+                            <a class="nav-link" href="#gallery">Realizacje</a>
+                        </li>
+                        <li class="nav-item pe-sm-4 pe-md-5">
+                            <a class="nav-link" aria-current="page" href="#contact">Kontakt</a>
+                        </li>
+                        
+                        <!-- Browser -->
+                        <li class="navbar__browser">
+                            <img id="navbar__browser__img" class="navbar__browser__img" src="./assets/navbar/reading-glass.svg" alt="Najlepsze aranżacje ogrodów" />
+                            <input class="navbar__browser__input hide" id="navbar__input" type="text" placeholder="Wpisz aby wyszukać" aria-label="browser">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <!-- Sekcja "Intro" -->
+    <section id="intro" class="row">
+        <div class="intro__area-beige col-12 col-lg-6">
+            <div class="intro__content">
+                <div class="intro__content-text p-3 p-xxl-0">
+                    <h1>Nowoczesna aranżacja <br> Twojego ogrodu</h1>
+                    <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                    <div class="intro__content__buttons">
+                        <a href="#contact" class="btn btn-success me-xl-3">Skontaktuj się z nami</a>
+                        <a href="#gallery" class="btn btn-outline-success pe-1 ms-xl-3">
+                            Zobacz nasze realizacje
+                            <img src="./assets/intro/arrow-down.svg" alt="Kompleksowa obsługa z zakresu projektowania ogrodów" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Currently displayed slide -->
+        <img class="intro__slider-mini  animate col-12 col-lg-6" src="./assets/intro/slide1.jpg" alt="Ogrodnictwo | żywopłoty" />
+        
+        <span class="intro__buttons-slider">
+            <img src="./assets/intro/arrow-left.svg" class="intro__button-left my-4 me-3" data-bs-target="#carouselExampleControls" alt="Projektanci ogrodów" />
+            <img src="./assets/intro/arrow-right.svg" class="intro__button-right my-4 ms-3" data-bs-target="#carouselExampleControls" alt="Architekci ogrodów" />
+        </span>    
+        
+    </section>
+    
+    <!-- Sekcja "Oferta" -->
+    <section id="portfolio">
+        <div class="portofolio__jumbotron container-sm mb-5">
+            <h6 class="mb-3">Oferta</h6>
+            <div class="container__box">
+                <h1>Działamy <span class="fst-italic">kompleksowo</span></h1>
+                <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+            </div>
+        </div>
+        
+        <!-- Cards -->
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <!-- <div class=" my-5 col-8 col-lg-4 align-items-center justify-content-center"> -->
+                    <div class="my-5 col-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body mx-4 my-4 py-4">
+                                <div class="card-body__main">
+                                    <img src="./assets/portfolio/pencil.svg" alt="Projekt ogrodu na zamówienie" />
+                                    <div class="card-body__main__text">
+                                        <h5 class="card-title fs-3">Projekty</h5>
+                                        <p class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                                </div>
+                            </div>
+                            <a href="#about" class="btn">Dowiedz się więcej<img src="./assets/portfolio/arrow-right.svg" alt="Najlepsze firmy ogrodnicze" /></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" my-5 col-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body mx-4 my-4 py-4">
+                            <div class="card-body__main">
+                                <img src="./assets/portfolio/eye.svg" alr="Projektowanie ogrodów z wizualizacją" />
+                                <div class="card-body__main__text">
+                                    <h5 class="card-title fs-3">Wizualizacje</h5>
+                                    <p class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                                </div>
+                            </div>
+                            <a href="#intro" class="btn">Dowiedz się więcej<img src="./assets/portfolio/arrow-right.svg" alt="Aranżacje ogrodów" /></a>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class=" my-5 col-12 col-xl-4">
+                    <div class="card card2">
+                        <div class="card-body mx-4 my-4 py-4">
+                            <div class="card-body__main">
+                                <img src="./assets/portfolio/magic.svg" alt="Nowoczesne projektowanie ogrodów" />
+                                <div class="card-body__main__text">
+                                    <h5 class="card-title fs-3">Realizacje</h5>
+                                    <p class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                                </div>
+                            </div>
+                            <a href="#gallery" class="btn">Zobacz nasze realizacje<img src="./assets/portfolio/arrow-right.svg" alt="Projektowanie i tworzenie ogrodów"/></a>
+                        </div>
+                    </div>
+                </div>   
+                
+            </div>
+        </section>
+    
+        <!-- Sekcja "O firmie" -->
+        <section id="about">
+        <!-- <section class="row" id="about"> -->
+            <img class="about__picture pe-md-5" src="./assets/about/house.png" alt="Ogrodnictwo | żywopłoty" />
+            
+            <div class="about__area__textbox ms-xxl-5">
+                <h6>O firmie</h6>
+                <h1 class="py-3">Tworzymy <br>z <span class="fst-italic">pasją</span></h1>
+                <p class="py-4">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                <div class="about__area__textbox-buttons pt-5">
+                    <a href="#contact" class="btn btn-outline">
+                        Poznaj nas bliżej<img class="ms-2" src="./assets/about/arrow-right.svg" alt="Nowoczesne ogrody | Polska" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sekcja "Realizacje" -->
+        <section id="gallery">
+            <div class="gallery__title">
+                <h6>Realizacje</h6>
+                <h1 class="pt-3">Nasze <span class="fst-italic">projekty</span></h1>
+            </div>
+            
+            <!-- Masonry gallery -->
+            <div class="gallery__masonry container-fluid">
+                <div class="grid-item"><img src="./assets/gallery/photo1.png" alt="Ogrodnictwo 1"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo2.png" alt="Ogrodnictwo 2"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo3.png" alt="Ogrodnictwo 3"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo4.png" alt="Ogrodnictwo 4"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo5.png" alt="Ogrodnictwo 5"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo6.png" alt="Ogrodnictwo 6"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo7.png" alt="Ogrodnictwo 7"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo8.png" alt="Ogrodnictwo 8"></div>
+                <div class="grid-item"><img src="./assets/gallery/photo9.png" alt="Ogrodnictwo 9"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo10.png" alt="Ogrodnictwo 10"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo11.png" alt="Ogrodnictwo 11"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo12.png" alt="Ogrodnictwo 12"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo13.png" alt="Ogrodnictwo 13"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo14.png" alt="Ogrodnictwo 14"></div>
+                <div class="grid-item item-another"><img src="./assets/gallery/photo15.png" alt="Ogrodnictwo 15"></div>
+            </div>
+            
+            <!-- Shadow put on the masonry -->
+            <div class="gallery__masonry__shadow">
+                <a class="btn btn-outline-dark" id="btn-unroll">Rozwiń<img class="ps-2" src="./assets/gallery/arrow-down.svg" alt="Doświadczeni projektanci ogrodów"/></a>
+            </div>
+            
+            <!-- Popup slider hidden by default -->
+            <div class="gallery__slider">
+                <!-- closing button -->
+                <img class="gallery__slider__closing" src="./assets/gallery/closing.svg" />
+                
+                <!-- Left arrow in popup slider -->
+                <img class="gallery__slider__arrow-left"  src="./assets/gallery/arrow-left-grey.svg" alt="Najlepsi ogrodnicy w Polsce"/>
+                
+                <!-- Currently displayed image in popup slider -->
+                <img id="gallery__slider__image-current" src="./assets/gallery/photo1.png" alt="Kompleksowa obsługa inwestycyjnych obiektów zielonych">
+                
+                <!-- Right arrow in popup slider -->
+                <img class="gallery__slider__arrow-right" src="./assets/gallery/arrow-left-grey.svg" alt="Usługi ogrodnicze"/>
+            </div>
+            
+        </section>
+        
+        <!-- Sekcja zachęcająca do skorzystania z Instagrama -->
+        <section id="contact">
+            <div class="contact__box-green container">
+                <div class="contact__box__text-left">
+                    <p>Zostańmy w kontakcie!</p>
+                    <p>Znajdziesz nas na <span class="fst-italic">Instagramie</span>.</p>
+                </div>
+                
+                <div class="contact__box__text-right">
+                    <p>Śledź nasze najnowsze realizacje!</p>
+                    <a class="btn btn-light mt-4">Instagram</a>
+                </div>    
+            </div>
+        </section>
+        
+        <!-- Stopka -->
+        <section id="footer">
+            <div class="footer__data">
+                <div class="footer__data__contact">
+                    <img src="./assets/footer/logo_giard_design.svg" />
+                    <span class="footer__data__contact__container">
+                        <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                        <a href="#contact" class="btn btn-success ms-4">Skontaktuj się z nami</a>
+                    </span>
+                </div>
+
+                <div class="footer__data__separator"></div>
+
+                <div class="footer__data__media">
+                    <div class="footer__data__media__list">
+                        <span>Kontakt</span>
+                        <span>Instagram</span>
+                        <span>Facebook</span>
+                        <span>LinkedIn</span>
+                    </div>
+                    <span class="footer__data__media__address">
+                        <span>000-000-000</span>
+                        <span>giarddesign@kontakt.pl</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer__caption">
+                <p>Prawa zastrzeżone © 2022</p>
+                <span class="footer__caption__container">
+                    <span>Made by</span>
+                    <img src="./assets/footer/logo_adRespect.svg" alt="Ogrody na zamówienie pod klienta" />
+                </span>
+            </div>
+        </section>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <!-- File with Macy setup -->
+        <script src="./JavaScript/navbar.js"></script>
+
+        <!-- Changing images in mini slider in intro section -->
+        <script src="./JavaScript/slider-mini.js"></script>
+
+        <!-- File with Macy setup -->
+        <script src="./JavaScript/macy.js"></script>
+
+        <!-- Script responsible for unrolling masonry -->
+        <script src="./JavaScript/gallery-unroll.js"></script>
+
+        <!-- Popup gallery -->
+        <script src="./JavaScript/gallery-popup.js"></script>
+        
+    </body>
+    
+</html>

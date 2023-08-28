@@ -1,0 +1,18 @@
+:root {
+    --giard-green: #1B5B31;
+    --light-green: hsl(141, 54%, 33%);
+    --background-grey: #F5F0EC;
+    --our-beige: #DCC1AB;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+}
+
+* {
+    font-family: inter, sans-serif;
+    /* border: 1px solid red;   */
+}

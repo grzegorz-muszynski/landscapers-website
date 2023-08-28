@@ -1,0 +1,126 @@
+#intro {
+    max-width: 100%;
+    margin: 0;
+    overflow: none;
+}
+
+.intro__area-beige,
+.intro__slide {
+    padding: 0;
+}
+
+.intro__area-beige {
+    height: 737px;
+    background-color: var(--our-beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: none;
+}
+.intro__content {
+    width: 600px;
+}
+.intro__content h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat-regular', sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 44px;
+}
+.intro__content p {
+    font-family: inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 489px;
+    margin-bottom: 72px;
+}
+
+/* Arrow down in right button */
+.intro__content__buttons a img {
+    max-height: 16px;
+    margin-left: 8px;
+}
+
+/* Both buttons in Intro section */
+.intro__content__buttons a {
+    border-radius: 25px;
+    line-height: 1.5;
+    padding: 12px 24px 14px;
+}
+
+.intro__content__buttons .btn-success {
+    width: 208px;
+    background-color: var(--giard-green);
+}
+
+.intro__content__buttons .btn-success:hover {
+    background-color: var(--light-green);
+}
+
+.intro__content__buttons .btn-outline-success {
+    width: 249px;
+    color: var(--giard-green);
+    border-color: var(--giard-green);
+}
+
+.intro__content__buttons .btn-outline-success:hover {
+    background-color: hsl(27, 41%, 87%);
+}
+
+ /* Mini-slider */
+.intro__slider-mini {
+    height: 737px;
+    padding: 0;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Arrow buttons */
+.intro__buttons-slider {
+    display: inline;
+    background-color: #F5F0EC;
+    padding: 0 32px;
+    position: absolute;
+    top: 1458px;
+    right: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 0;
+    max-width: 192px; 
+}
+
+.intro__buttons-slider {
+    cursor: pointer;
+}
+
+.intro__buttons-slider img {
+    max-height: 48px;
+}
+
+@media (max-width: 576px) {
+    .intro__content,
+    .intro__content-text,
+    .intro__content-text p {
+        width: 95%;
+    }
+    
+    .intro__content-text h1 {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .intro__content__buttons a {
+        display: block;
+    }
+
+    .intro__content__buttons .btn-outline-success {
+        margin-top: 8px;
+    }
+}
+
+@media (min-width: 992px) {
+    .intro__buttons-slider {
+        top: 721px;
+    }
+}

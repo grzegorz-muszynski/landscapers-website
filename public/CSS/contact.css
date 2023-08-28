@@ -1,0 +1,102 @@
+.contact__box-green {
+    margin: 60px auto;
+    background-color: var(--giard-green);
+    padding: 120px 110px;
+}
+
+.contact__box__text-left {
+    display: inline-block;
+    margin-right: 60px;
+    position: relative;
+    top: 25px;
+}
+
+.contact__box__text-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--background-grey);
+    font-weight: normal;
+    margin: 0;
+}
+
+.contact__box__text-left p span {
+    letter-spacing: 0.01em;
+}  
+
+.contact__box__text-right {
+    display: inline-block;   
+    width: 157px;
+}
+.contact__box__text-right p {
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    color: var(--background-grey);
+    margin: 0;
+}
+
+/* Instagram button */
+.contact__box__text-right a {
+    color: var(--giard-green);
+    background-color: var(--background-grey);
+    line-height: 1.5;
+    padding: 10px 24px 12px;
+    border-radius: 46px;
+}
+
+@media (min-width: 1200px) {
+    .contact__box-green {
+        width: 1040px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact__box__text-left {
+        top: 0;
+    }
+    .contact__box__text-left p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact__box__text-left {
+       margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__box-green {
+       padding: 30px 20px;
+    }
+
+    .contact__box__text-left {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__box-green {
+        margin: 0;
+        padding: 50px 20px;
+    }
+    .contact__box__text-right {
+        width: 100%;
+    }
+    
+    .contact__box__text-left,
+    .contact__box__text-right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact__box-green p {
+        text-align: center;
+    }
+
+    .contact__box__text-left p {
+        font-size: 20px;
+    }
+}
